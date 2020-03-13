@@ -1,0 +1,213 @@
+/* Website Styles */
+ /* *
+{
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+}  */
+* {
+  box-sizing: border-box;
+}
+/*Header*/
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #804000;
+  border: 1px solid #e6e6e6;
+}
+
+}
+.header h1 {
+  font-size: 50px;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  /* background-color: #f1f1f1; */
+  padding-left: 20px;
+}
+.trees{
+  background-image: url(images/ivana-cajina-a3mdwZAoGcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right top
+}
+.Meworking{
+  background-image: url(images/MEworking.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right top
+}
+.cocktails{
+  background-image: url(images/helena-yankovska-sJOy9pveFbU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 74% 100%;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.codeglasses{
+  background-image: url(images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 74% 100%;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.imgcomps{
+  background-image: url(images/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 74% 100%;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.imgcomp{
+  background-image: url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 74% 100%;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+
+/* Fake image */
+.Img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+.cardlinks {
+  background-color: black;
+  padding: 20px;
+  padding-right: 35px;
+  margin-top: 20px;
+  float: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn{
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) { .imgcomp {
+    background-size: 100%;
+    margin: 0;
+  }
+}
+ /* Navigation Bar */
+#Navbar
+{
+  position: sticky;
+    z-index: +1;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  /* border-radius: 10px 10px 0px 0px; */
+}
+
+.nav {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.nav:last-child
+{
+  float: right;
+  border-left: 1px solid #bbb;
+  border-right: none;
+
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav a.active
+{
+  background-color: #663300;
+  color: white;
+}
+
+.nav a:hover:not(.active){
+  background-color: #111111;
+}
+
+@media screen and (max-width: 400px) {
+  .nav a{
+    float: none;
+    width: 100%;
+  }
+}
+
+/*Background Image*/
+body
+{
+background-image: url('images/marjanblan-DLg7YmBgJp0-unsplash.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+margin: 0;
+}
+
+section {background-color: darkGrey; text-align: center; padding: 7px; border-radius: 10px;}
+
+ol {color: white; border: 1px solid darkGrey; padding: 30px; text-align: left;}
+
+ul {color: white; border: 1px solid darkGrey; padding: 20px; text-align: left;}
+
+/* Facebook Link */
+/* #Fb:link, #Fb:visited
+{
+  background-color: #1a1aff;
+color: white;
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;}
+#Fb:hover, #Fb:active {
+background-color: white;
+color: #1a1aff;
+}
+#Fb{
+  width:50%;
+} */
+
+p {color: white;
+font-size: 25px;}
+h1{color: white;}
+h2{color: white;}
+li{font-size: 20px;}
+
+div.center {
+margin-left: auto;
+margin-right: auto;
+display: table;
+}
